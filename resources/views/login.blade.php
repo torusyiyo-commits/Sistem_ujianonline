@@ -201,7 +201,7 @@
                         placeholder="Masukkan password" required>
                 </div>
 
-                <button type="submit" class="btn-login">Login Wok</button>
+                <button type="submit" class="btn-login">Login</button>
             </form>
         </div>
     </main>
