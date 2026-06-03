@@ -1,0 +1,1 @@
+<?php require "vendor/autoload.php"; $app = require "bootstrap/app.php"; $kernel = $app->make(Illuminate\Contracts\Console\Kernel::class); $kernel->bootstrap(); $u = App\Models\Ujian::find(10); $u->jam_selesai = "00:10:00"; $u->durasi = 60; $u->save();

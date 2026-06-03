@@ -1,0 +1,1 @@
+<?php require "vendor/autoload.php"; $app = require "bootstrap/app.php"; $kernel = $app->make(Illuminate\Contracts\Console\Kernel::class); $kernel->bootstrap(); App\Models\HasilUjian::whereIn("id", [27, 28, 29])->delete(); echo "Deleted successfully.";

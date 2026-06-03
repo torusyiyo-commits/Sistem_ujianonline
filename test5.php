@@ -1,0 +1,1 @@
+<?php require "vendor/autoload.php"; $app = require "bootstrap/app.php"; $kernel = $app->make(Illuminate\Contracts\Console\Kernel::class); $kernel->bootstrap(); $hasil = App\Models\HasilUjian::with("user")->where("ujian_id", 10)->get(); foreach($hasil as $h) { echo $h->id . " - " . ($h->user->name ?? "Unknown") . " - " . $h->skor . "\n"; }
